@@ -1,8 +1,14 @@
+import "../assets/styles/App.css"
+import Layout from "./Layout/Layout";
+import Home from './Pages/Home';
+import SignIn from './Pages/SignIn';
+
 function App() {
     return (
-        <div className="App">
-            <div>React Quiz Application</div>
-        </div>
+        <Layout>
+            <Home/>
+            <SignIn/>
+        </Layout>
     );
 }
 
