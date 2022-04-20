@@ -1,5 +1,6 @@
 import classes from "../../assets/styles/ProgressBar.module.css";
 import Button from "../Form/Button";
+import { Link } from 'react-router-dom';
 
 const ProgressBar = () => {
     return (
@@ -16,7 +17,7 @@ const ProgressBar = () => {
                     ></div>
                 </div>
             </div>
-            <a href="result.html">
+            <Link to="/result">
                 <Button className={classes.next}>
                     <span>Next Question</span>
                     <span className="material-icons-outlined">
@@ -24,7 +25,7 @@ const ProgressBar = () => {
                         arrow_forward{" "}
                     </span>
                 </Button>
-            </a>
+            </Link>
         </div>
     );
 };
