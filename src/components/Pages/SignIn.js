@@ -9,7 +9,7 @@ const SignIn = () => {
     return (
         <>
             <h1>Login to your account</h1>
-            <div class="column">
+            <div className="column">
                 <FormIllustration image={Image} altName="Login" />
                 <Form className={`${classes.login}`}>
                     <TextInput
@@ -23,7 +23,9 @@ const SignIn = () => {
                         icon="lock"
                     />
 
-                    <Button>Submit Now</Button>
+                    <Button>
+                        <span>Submit Now</span>
+                    </Button>
 
                     <div className="info">
                         Don't have an account?

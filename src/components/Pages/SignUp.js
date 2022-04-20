@@ -4,7 +4,7 @@ import Form from "./../Form/Form";
 import TextInput from "../Form/TextInput";
 import CheckBox from "./../Form/CheckBox";
 import Button from "../Form/Button";
-import classes from '../../assets/styles/SignUp.module.css';
+import classes from "../../assets/styles/SignUp.module.css";
 
 const SignUp = () => {
     return (
@@ -33,7 +33,9 @@ const SignUp = () => {
                         I agree to the Terms & Conditions
                     </CheckBox>
 
-                    <Button>Submit Now</Button>
+                    <Button>
+                        <span>Submit Now</span>
+                    </Button>
 
                     <div className="info">
                         Already have an account? <a href="login.html">Login</a>{" "}
