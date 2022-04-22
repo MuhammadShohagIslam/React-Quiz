@@ -1,3 +1,4 @@
+import React from 'react';
 import Answer from "../Answer/Answer";
 import MiniPlayer from "../MiniPlayer/MiniPlayer";
 import ProgressBar from "../ProgressBar/ProgressBar";

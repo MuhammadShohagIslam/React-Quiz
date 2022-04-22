@@ -1,3 +1,4 @@
+import React from 'react';
 import SuccessImg from "../../assets/images/success.png";
 import classes from "../../assets/styles/Summary.module.css";
 

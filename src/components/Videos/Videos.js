@@ -1,3 +1,4 @@
+import React from 'react';
 import Video from "./Video";
 import classes from "../../assets/styles/Videos.module.css";
 

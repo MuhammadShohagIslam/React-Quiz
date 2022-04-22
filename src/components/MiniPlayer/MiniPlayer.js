@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from '../../assets/styles/MiniPlayer.module.css';
 import image from '../../assets/images/3.jpg';
 

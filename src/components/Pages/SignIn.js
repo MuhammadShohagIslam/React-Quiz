@@ -1,9 +1,8 @@
+import React from 'react';
 import FormIllustration from "../FormIllustration/FormIllustration";
 import Image from "../../assets/images/login.svg";
-import Form from "./../Form/Form";
-import TextInput from "./../Form/TextInput";
-import Button from "./../Form/Button";
-import classes from "../../assets/styles/SignIn.module.css";
+import SignInForm from '../Form/SignInForm';
+
 
 const SignIn = () => {
     return (
@@ -11,27 +10,7 @@ const SignIn = () => {
             <h1>Login to your account</h1>
             <div className="column">
                 <FormIllustration image={Image} altName="Login" />
-                <Form className={`${classes.login}`}>
-                    <TextInput
-                        type="text"
-                        placeholder="Enter email"
-                        icon="alternate_email"
-                    />
-                    <TextInput
-                        type="password"
-                        placeholder="Enter password"
-                        icon="lock"
-                    />
-
-                    <Button>
-                        <span>Submit Now</span>
-                    </Button>
-
-                    <div className="info">
-                        Don't have an account?
-                        <a href="signup.html">Signup</a> instead.
-                    </div>
-                </Form>
+                <SignInForm/>
             </div>
         </>
     );

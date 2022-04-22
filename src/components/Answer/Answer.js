@@ -1,3 +1,4 @@
+import React from 'react';
 import CheckBox from "../Form/CheckBox";
 import classes from '../../assets/styles/Answer.module.css'
 

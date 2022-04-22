@@ -1,3 +1,4 @@
+import React from 'react';
 import Nav from "./../Nav/Nav";
 import classes from "../../assets/styles/Layout.module.css";
 const Layout = ({ children }) => {

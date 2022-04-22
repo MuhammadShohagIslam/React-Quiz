@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from '../../assets/styles/TextInput.module.css';
 
 const TextInput = ({icon, ...rest}) => {

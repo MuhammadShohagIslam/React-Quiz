@@ -1,3 +1,4 @@
+import React from 'react';
 import Question from "../Question/Question";
 import classes from '../../assets/styles/Analysis.module.css';
 

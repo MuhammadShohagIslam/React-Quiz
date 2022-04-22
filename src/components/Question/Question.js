@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from "../../assets/styles/Question.module.css";
 import Answer from "../Answer/Answer";
 

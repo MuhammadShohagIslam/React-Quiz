@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from "../../assets/styles/ProgressBar.module.css";
 import Button from "../Form/Button";
 import { Link } from 'react-router-dom';

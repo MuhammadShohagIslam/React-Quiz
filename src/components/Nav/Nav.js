@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from "../../assets/styles/Nav.module.css";
 import Logo from "../../assets/images/logo-bg.png";
 import Account from "./Account";

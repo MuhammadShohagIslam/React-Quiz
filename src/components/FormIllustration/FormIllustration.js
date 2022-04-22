@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from '../../assets/styles/FormIllustration.module.css'
 
 const FormIllustration = ({image,altName}) => {
