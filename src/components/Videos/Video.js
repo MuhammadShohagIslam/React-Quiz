@@ -6,7 +6,7 @@ const Video = ({ noq, title, id }) => {
     return (
         <>
             {noq > 0 ? (
-                <Link to={`quiz/${id}`}>
+                <Link to={`quiz/${id}`} state={{videoID: id, videoTitle: title}}>
                     <div className={classes.video}>
                         <img
                             src={`http://img.youtube.com/vi/${id}/maxresdefault.jpg`}

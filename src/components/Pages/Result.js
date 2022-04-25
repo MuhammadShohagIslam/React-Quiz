@@ -1,9 +1,9 @@
-import React from "react";
 import _ from "lodash";
+import React from "react";
+import { useLocation, useParams } from "react-router-dom";
 import Analysis from "../Analysis/Analysis";
 import Summary from "../Summary/Summary";
 import useAnswers from "./../../hooks/useAnswers";
-import { useParams, useLocation } from "react-router-dom";
 
 const Result = () => {
     const { id } = useParams();
@@ -36,6 +36,7 @@ const Result = () => {
         return score;
     };
     const userScore = calculate();
+    console.log(answers)
     
     return (
         <>
@@ -44,7 +45,7 @@ const Result = () => {
             {!loading && !error && answers && answers.length > 0 && (
                 <>
                     <Summary score={userScore} noq={answers.length} />
-                    <Analysis />
+                    <Analysis answers={answers} />
                 </>
             )}
         </>
