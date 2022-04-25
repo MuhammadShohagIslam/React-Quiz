@@ -1,12 +1,24 @@
-import React from 'react';
+import React from "react";
+import classes from "../../assets/styles/Answer.module.css";
 import CheckBox from "../Form/CheckBox";
-import classes from '../../assets/styles/Answer.module.css'
 
-const Answer = () => {
+const Answer = ({ options = [], handleAnswerChange }) => {
     return (
-        <div className={classes.answers}>
-            <CheckBox className={classes.answer} type="checkbox">A New Hope 1</CheckBox>
-        </div>
+        <>
+            <div className={classes.answers}>
+                {options.map((option, index) => (
+                    <CheckBox
+                        key={index}
+                        onChange={(e) => handleAnswerChange(e, index)}
+                        checked={option.checked}
+                        className={classes.answer}
+                        type="checkbox"
+                    >
+                        {option.title}
+                    </CheckBox>
+                ))}
+            </div>
+        </>
     );
 };
 
